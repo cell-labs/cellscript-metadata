@@ -1,6 +1,6 @@
-# CellScript Contract Metadata
+# Cell Script Metadata
 
-This README provides a detailed description of the metadata for the `sUDT` contract written in CellScript. The metadata format is designed to give developers and tools the necessary information for interacting with, compiling, and debugging the contract.
+The Cell Script Metadata is designed to give developers and tools the necessary information to interact with, compile, and debug the contract.
 
 ## Overview
 
@@ -11,7 +11,7 @@ The metadata is structured in JSON format, providing a standardized way to descr
 - **name**: The name of the contract. In this case, it is "sUDT".
 - **metadataVersion**: The version of the metadata format. This helps tools understand how to parse the metadata. The current version is "1.0".
 - **language**: The programming language in which the contract is written. For this contract, it is "CellScript".
-- **setting**: A collection of settings and versions for the compiler and virtual machine used.
+- **setting**: A collection of settings and versions for the compiler and virtual machine.
 - **abi**: The Application Binary Interface (ABI) describes how to interact with the contract's functions.
 - **elfcode**: A hexadecimal string representing the compiled contract code.
 
@@ -25,16 +25,12 @@ The `setting` field contains configuration details about the environment and too
 
 ### ABI
 
-The `abi` array contains descriptions of the contract's functions that are exposed for interaction.
+The `abi` array contains descriptions of the contract's functions exposed for interaction.
 
 - **name**: The name of the function. The example includes a single function named "main".
-- **parameters**: An array describing the parameters that the function accepts. In this case, the `main` function does not accept any parameters.
+- **parameters**: An array describing the parameters that the function accepts. In this case, the `main` function accepts no parameters.
 - **returnType**: The type of value returned by the function. For the `main` function, it returns a "boolean".
 
 ### ELF Code
 
 - **elfcode**: Contains the compiled contract code in hexadecimal format. This is the code that will be deployed to the blockchain. The example value "0x123" is a placeholder for the actual compiled code.
-
-## Conclusion
-
-This README describes the structure and purpose of each field in the metadata for the `sUDT` contract. The metadata provides a clear specification for tools and developers, facilitating interaction, compilation, and debugging of the contract.
