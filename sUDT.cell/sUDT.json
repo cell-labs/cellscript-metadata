@@ -1,0 +1,22 @@
+{
+  "name": "sUDT",
+  "metadataVersion": "1.0",
+  "language": "CellScript",
+  "setting": {
+    "compiler": {
+      "version": "CellScriptCompiler-1.0.0"
+    },
+    "ckbVMVersion": "v0.24.9"
+  },
+  "abi": [
+    {
+      "name": "main",
+      "parameters": [],
+      "returnType": "boolean",
+      "stateMutability": "view"
+    }
+  ],
+
+  "elfcode": "0x123"
+
+}
